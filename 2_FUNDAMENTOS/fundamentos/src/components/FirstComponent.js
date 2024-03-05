@@ -1,5 +1,7 @@
 // arquivo de estilo
 
+import MyComponent from "./MyComponent";
+
 
 const FirstComponent = () => {
 
@@ -15,6 +17,7 @@ const FirstComponent = () => {
             { /* Algum comentário */ }
             <h1>Meu primeiro componente</h1>
             <p className="teste">Meu texto</p>
+            <MyComponent />
         </div>
     )
 }
