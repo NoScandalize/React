@@ -1,4 +1,8 @@
+// styles
 import './App.css';
+
+// components
+import FirstComponent from './components/FirstComponent';
 
 function App() {
   return (
