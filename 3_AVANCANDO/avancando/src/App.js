@@ -1,6 +1,7 @@
 import './App.css';
 
 import Plunderer from './assets/img2.webp'
+import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <img src={Plunderer} alt="Plunderer Licht" />
       </div>
       <ManageData />
+      <ListRender />
     </div>
   );
 }
