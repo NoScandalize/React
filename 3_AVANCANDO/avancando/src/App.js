@@ -8,6 +8,7 @@ import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragment from "./components/Fragment";
 import Container from "./components/Container";
+import ExecuteFuntion from "./components/ExecuteFuntion";
 
 function App() {
   const cars = [
@@ -15,6 +16,10 @@ function App() {
     { id: 2, brand: "KIA", color: "Branco", newCar: false, Km: 45333 },
     { id: 3, brand: "Renault", color: "Azul", newCar: false, Km: 54000 },
   ];
+
+  function showMessage() {
+    console.log("Evento do componente pai!");
+  }
 
   return (
     <div className="App">
@@ -36,6 +41,7 @@ function App() {
       <CarDetails band="Fiat" color="Branco" km={4500} newCar={false} />
       {cars.map((car) => (
         <CarDetails
+          key={car.id}
           brand={car.brand}
           color={car.color}
           Km={car.Km}
@@ -46,6 +52,7 @@ function App() {
       <Container myValue="testing">
         <p>E este é o conteúdo!</p>
       </Container>
+      <ExecuteFuntion myFuntion={showMessage} />
     </div>
   );
 }
