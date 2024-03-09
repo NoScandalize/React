@@ -7,6 +7,7 @@ import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragment from "./components/Fragment";
+import Container from "./components/Container";
 
 function App() {
   const cars = [
@@ -42,6 +43,9 @@ function App() {
         />
       ))}
       <Fragment />
+      <Container myValue="testing">
+        <p>E este é o conteúdo!</p>
+      </Container>
     </div>
   );
 }
