@@ -4,6 +4,8 @@ import Plunderer from './assets/img2.webp'
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 import ConditionalRender from './components/ConditionalRender';
+import ShowUserName from './components/ShowUserName';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <ManageData />
       <ListRender />
       <ConditionalRender />
+      <ShowUserName name="Douglas" />
     </div>
   );
 }
