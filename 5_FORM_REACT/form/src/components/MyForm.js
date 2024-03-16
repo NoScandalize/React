@@ -20,7 +20,7 @@ const MyForm = () => {
             </div>
             <label>
                 <span>E-mail</span>
-                <input type="email" name="email" placeholder='Digite o seu email' />
+                <input type="email" name="email" placeholder='Digite o seu email' onChange={(e) => setEmail(e.target.value)} />
             </label>
             <input type="submit" value="Enviar" />
         </form>
